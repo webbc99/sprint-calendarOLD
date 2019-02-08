@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="sprint-calendar.css">
+  <link rel="icon" type="image/png" href="imgs/theaccessgrouplogo.png">
+  <title>Sprint Calendar</title>
+</head>
+<body>
+
+<img id="access_logo" src="imgs/accessgroup.png">
+
+<h1>Access Recruit Sprint Calendar</h1>
+
+<div id="form">
+  <label name="jira">Jira ID:</label>
+  <input type="text" name="jira" id="jira_id">
+  <button id="create">Create</button>
+  <button id="delete_all_button" onclick="return confirm('Are you sure?')">Delete All</button>
+</div>
+
+<div id="creation_area"></div>
+
+<div id="calendar">
+  <table>
+    <tr>
+      <th>Owner</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+    </tr>
+    <tr id="chris_row">
+      <td class="owner_name">Chris</td>
+      <td><div class="day" id="a-1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="a-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="a-3" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="a-4" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="a-5" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="a-6" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="a-7" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="a-8" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="a-9" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="a-10" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    </tr>
+    <tr id="scott_row">
+      <td class="owner_name">Scott</td>
+      <td><div class="day" id="b-1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="b-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="b-3" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="b-4" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="b-5" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="b-6" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="b-7" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="b-8" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="b-9" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="b-10" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    </tr>
+    <tr id="tiff_row">
+      <td class="owner_name">Tiff</td>
+      <td><div class="day" id="c-1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="c-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="c-3" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="c-4" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="c-5" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="c-6" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="c-7" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="c-8" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="c-9" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="c-10" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    </tr>
+    <tr id="stefan_row">
+      <td class="owner_name">Stefan</td>
+      <td><div class="day" id="d-1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="d-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="d-3" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="d-4" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="d-5" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="d-6" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="d-7" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="d-8" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="d-9" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="d-10" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    </tr>
+    <tr id="branko_row">
+      <td class="owner_name">Branko</td>
+      <td><div class="day" id="e-1" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="e-2" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="e-3" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="e-4" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="e-5" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="e-6" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="e-7" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="e-8" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="e-9" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+      <td><div class="day" id="e-10" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+    </tr>
+  </table>
+</div>
+
+<script type="text/javascript" src="sprint-calendar.js"></script>
+</body>
+</html>

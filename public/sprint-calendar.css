@@ -1,0 +1,72 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+table {
+  border: 1px solid black;
+}
+
+td {
+  background-color: #ddd;
+  height: 90px;
+  min-width: 130px;
+  border-radius: 3px;
+}
+
+h1 {
+  text-align: center;
+  vertical-align: center;
+}
+
+#access_logo {
+  height: 60px;
+}
+
+.owner_name {
+  background-color: #fff;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+#form {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#create {
+  background-color: #c7ffc4;
+  margin-left: 10px;
+  border-radius: 2px;
+}
+
+#calendar {
+  margin-top: 10px;
+}
+
+#delete_all_button {
+  background-color: #ffdbde;
+  margin-left: 10px;
+  border-radius: 2px;
+}
+
+.delete_button {
+  width: 90%;
+}
+
+.day {
+  width: 120px;
+  height: 120px;
+}
+
+.todo_item {
+  width: 125px;
+  height: 40px;
+  background-color: yellow;
+  text-align: center;
+  border: 1px solid black;
+  resize: horizontal;
+  overflow: scroll;
+  font-size: 0.8em;
+  margin-left: auto;
+  margin-right: auto;
+}
