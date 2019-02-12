@@ -96,10 +96,10 @@ $("#delete_all_button").click(function(){
 
 
 var oktaSignIn = new OktaSignIn({
-  baseUrl: "{{ https://dev-534730.oktapreview.com }}",
-  clientId: "{{ 0oajcja6b9pvkD6yI0h7 }}",
+  baseUrl: "https://dev-534730.oktapreview.com",
+  clientId: "0oajcja6b9pvkD6yI0h7",
   authParams: {
-    issuer: "{{ https://dev-534730.oktapreview.com }}/oauth2/default",
+    issuer: "https://dev-534730.oktapreview.com/oauth2/default",
     responseType: ["token", "id_token"],
     display: "page"
   }
