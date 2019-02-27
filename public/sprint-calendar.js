@@ -33,6 +33,7 @@ function drop(ev) {
   ev.target.append(document.getElementById(data));
   $.post({ url: endpoint + "/todos", data: { title: data, start: ev.target.id }, success: function(response){
     var responseId = response["id"].toString();
+    console.log(responseId);
     document.getElementById(data).id = responseId;
   }})
 }
